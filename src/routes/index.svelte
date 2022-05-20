@@ -1,6 +1,8 @@
 <script context="module">
 	import configuration from "$lib/config";
 	import Background from "$lib/components/Background.svelte";
+	import Avatar from "$lib/components/Avatar.svelte";
+	import Titles from "$lib/components/Titles.svelte";
 
 	let {
 		personal,
@@ -18,7 +20,8 @@
 </svelte:head>
 
 <Background>
-	<h1>test</h1>
+	<Avatar />
+	<Titles />
 </Background>
 
 <style>
