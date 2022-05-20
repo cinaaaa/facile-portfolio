@@ -25,7 +25,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 95%;
-        margin: 2% 0% 0% 5%
+        margin: 2% 0% 0% 5%;
+        gap: 10px;
     }
 
     img {
