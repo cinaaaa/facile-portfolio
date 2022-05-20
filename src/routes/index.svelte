@@ -1,59 +1,25 @@
 <script context="module">
-	export const prerender = true;
-</script>
+	import configuration from "$lib/config";
+	import Background from "$lib/components/Background.svelte";
 
-<script>
-	import Counter from '$lib/Counter.svelte';
+	let {
+		personal,
+		assets,
+		socials,
+		colors
+	} = configuration;
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>
+		{personal.firstName} {personal.lastName} 
+		{personal.description ? `- ${personal.description}` : ''}
+	</title>
 </svelte:head>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+<Background>
+	<h1>test</h1>
+</Background>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
