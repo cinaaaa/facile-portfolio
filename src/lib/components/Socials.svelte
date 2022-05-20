@@ -9,7 +9,7 @@
     {#each Object.entries(socials) as [socialName, socialLink]}
         <a href={socialLink}>
             <img
-                src={`./node_modules/super-tiny-icons/images/svg/${socialName}.svg`} 
+                src={`https://github.com/edent/SuperTinyIcons/raw/master/images/svg/${socialName}.svg`} 
                 alt={socialName}
                 style={`fill: ${secondaryColor}`}
                 height="40"

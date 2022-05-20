@@ -6,14 +6,12 @@ specifiers:
   '@sveltejs/adapter-auto': next
   '@sveltejs/kit': next
   cookie: ^0.4.1
-  super-tiny-icons: ^0.4.0
   svelte: ^3.46.0
 
 dependencies:
   '@fontsource/fira-mono': 4.5.8
   '@lukeed/uuid': 2.0.0
   cookie: 0.4.2
-  super-tiny-icons: 0.4.0
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.43
@@ -499,11 +497,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /opencollective-postinstall/2.0.3:
-    resolution: {integrity: sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==}
-    hasBin: true
-    dev: false
-
   /path-parse/1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: true
@@ -570,13 +563,6 @@ packages:
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     dev: true
-
-  /super-tiny-icons/0.4.0:
-    resolution: {integrity: sha512-PEHlUQsSdEtQNeP4pNOBCDU9cJe6bsrMmG3yV62icvMDgjCC+srl9AfJ5RGwfKbyvGNbYRUtcmkka+k7yhZxOA==}
-    requiresBuild: true
-    dependencies:
-      opencollective-postinstall: 2.0.3
-    dev: false
 
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
