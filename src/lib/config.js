@@ -2,7 +2,7 @@ const configuration = {
     personal: {
         firstName: "Sina",
         lastName: "Farhadi",
-        description: "Front-end developer",
+        description: "Frontend Developer @ Yektanet | writing on @Medium & @FreeCodeCamp | React | TypeScript | Svelte",
     },
     assets: {
         image: "https://avatars.githubusercontent.com/u/42252572"
