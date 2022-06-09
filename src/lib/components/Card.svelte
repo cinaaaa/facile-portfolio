@@ -9,7 +9,7 @@
 <a href={post.link} target="__blank">
   <div style={`color: ${secondaryColor}`}>
     <h1>{@html post.title}</h1>
-    <h5>{post.pubDate.split(" ")[0]}</h5>
+    <p>{post.pubDate.split(" ")[0]}</p>
   </div>
 </a>
 
@@ -42,7 +42,7 @@
     margin: 10px 15px;
   }
 
-  h5 {
+  p {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     margin: 0 15px;
