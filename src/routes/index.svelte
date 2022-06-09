@@ -13,8 +13,9 @@
   <title>
     {personal.firstName}
     {personal.lastName}
-    {personal.description ? `- ${personal.description}` : ""}
   </title>
+  <!-- description meta header -->
+  <meta name="description" content={personal.description} />
 </svelte:head>
 
 <Background>
