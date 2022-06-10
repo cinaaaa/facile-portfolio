@@ -24,7 +24,7 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 270px;
     height: 100%;
     border-style: solid;
     border-width: 2px;
