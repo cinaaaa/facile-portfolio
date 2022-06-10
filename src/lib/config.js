@@ -11,7 +11,7 @@ const configuration = {
         linkedin: "https://linkedin.com/in/sina-farhadi",
         github: "https://github.com/cinaaaa",
         twitter: "https://twitter.com/cinaaaaaa_",
-        medium: "https://sinafarhadi.medium.com",
+        medium: "https://medium.com/@sinafarhadi",
     },
     colors: {
         primary: "#F7CB15",

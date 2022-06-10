@@ -4,6 +4,7 @@
   import Card from "./Card.svelte";
 
   let secondaryColor = configuration.colors.secondary;
+  let mediumUsername = configuration.socials.medium.split("@")[1];
 
   let mediumPosts;
   let mediumPostsLoading = false;
@@ -12,7 +13,8 @@
   // fetch sinafarhadi posts from medium
   function fetchPosts() {
     return fetch(
-      "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40sinafarhadi"
+      "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40" +
+        mediumUsername
     )
       .then((response) => response.json())
       .then((data) => data.items);
