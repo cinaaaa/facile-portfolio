@@ -1,6 +1,6 @@
 <script>
-  import configuration from "$lib/config";
   import { onMount } from "svelte";
+  import configuration from "$lib/config";
   import Card from "./Card.svelte";
 
   let secondaryColor = configuration.colors.secondary;
