@@ -16,7 +16,7 @@
 <style>
   a {
     text-decoration: none;
-    width: 22%;
+    width: 270px;
     height: 170px;
   }
 
@@ -24,7 +24,7 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 270px;
+    width: 100%;
     height: 100%;
     border-style: solid;
     border-width: 2px;

@@ -72,5 +72,6 @@
     column-gap: 3%;
     row-gap: 30px;
     padding-bottom: 100px;
+    justify-content: center;
   }
 </style>
