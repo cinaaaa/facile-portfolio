@@ -10,7 +10,7 @@ const configuration = {
     socials: {
         linkedin: "https://linkedin.com/in/sina-farhadi",
         github: "https://github.com/cinaaaa",
-        twitter: "https://twitter.com/cinaaaaaa_",
+        twitter: "https://twitter.com/cinaaaaaaa_",
         medium: "https://medium.com/@sinafarhadi",
     },
     colors: {
