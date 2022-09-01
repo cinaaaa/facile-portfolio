@@ -60,6 +60,7 @@
   .posts {
     margin-top: 7vh;
     margin-left: 5%;
+    min-height: 50vh;
   }
 
   h1 {
