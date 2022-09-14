@@ -21,11 +21,11 @@
     width: 95%;
     margin: 2% 0% 0% 5%;
     column-gap: 5%;
-    min-height: 50px;
+    min-height: 70px;
   }
 
   .socials a {
-    font-size: 24px;
+    font-size: 3vw;
     color: black;
     text-decoration: none;
     text-transform: capitalize;
