@@ -35,6 +35,10 @@
     background-color: white;
   }
 
+  div:hover {
+    box-shadow: 6px 6px 0 0 #090027;
+  }
+
   h1 {
     font-size: 25px;
     font-family: "Poppins", sans-serif;
