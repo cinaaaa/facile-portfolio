@@ -5,7 +5,7 @@ const configuration = {
         description: "Frontend Developer @ Yektanet | writing on @Medium & @FreeCodeCamp | React | TypeScript | Svelte",
     },
     assets: {
-        image: "https://avatars.githubusercontent.com/u/42252572"
+        image: "/profile.jpg"
     },
     socials: {
         linkedin: "https://linkedin.com/in/sina-farhadi",

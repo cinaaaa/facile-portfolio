@@ -3,15 +3,17 @@
   "name": "sveltekit",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "vite package",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "svelte": "^3.46.0"
+    "svelte": "^3.50.1",
+    "vite": "^3.1.0",
+    "vite-plugin-compression": "^0.5.1"
   },
   "type": "module",
   "dependencies": {

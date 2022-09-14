@@ -2,19 +2,13 @@
   import configuration from "$lib/config";
 
   let socials = configuration.socials;
-  let secondaryColor = configuration.colors.secondary;
+  let userName = configuration.personal.firstName;
 </script>
 
 <section class="socials">
   {#each Object.entries(socials) as [socialName, socialLink]}
-    <a href={socialLink}>
-      <img
-        src={`https://github.com/edent/SuperTinyIcons/raw/master/images/svg/${socialName}.svg`}
-        alt={socialName}
-        style={`fill: ${secondaryColor}`}
-        height="40"
-        width="40"
-      />
+    <a href={socialLink} target="__blank" alt={userName + "'s " + socialName}>
+      {socialName}
     </a>
   {/each}
 </section>
@@ -26,11 +20,19 @@
     flex-wrap: wrap;
     width: 95%;
     margin: 2% 0% 0% 5%;
-    gap: 10px;
+    column-gap: 5%;
     min-height: 50px;
   }
 
-  img {
-    filter: grayscale(1);
+  .socials a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .socials a:hover {
+    border-bottom: 6px solid black;
   }
 </style>
