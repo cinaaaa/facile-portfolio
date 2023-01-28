@@ -2,15 +2,14 @@ const configuration = {
     personal: {
         firstName: "Sina",
         lastName: "Farhadi",
-        description: "Frontend Developer @ Yektanet | writing on @Medium & @FreeCodeCamp | React | TypeScript | Svelte",
+        description: "Frontend Engineer @ Plan4Better",
     },
     assets: {
         image: "/profile.jpg"
     },
     socials: {
-        linkedin: "https://linkedin.com/in/sina-farhadi",
         github: "https://github.com/cinaaaa",
-        twitter: "https://twitter.com/cinaaaaaaa_",
+        linkedin: "https://linkedin.com/in/sina-farhadi",
         medium: "https://medium.com/@sinafarhadi",
     },
     colors: {
