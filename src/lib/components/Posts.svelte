@@ -3,6 +3,8 @@
   import configuration from "$lib/config";
   import Card from "./Card.svelte";
 
+  const loadingGifURL = configuration.assets.loadingGif;
+
   let secondaryColor = configuration.colors.secondary;
   let mediumUsername = configuration.socials.medium.split("@")[1];
 
@@ -32,15 +34,15 @@
         mediumPosts = posts;
         resetLoadings();
       })
-      .catch(() => {
-        mediumPostsLoading = false;
-        mediumPostsLoadingError = "Error fetching posts";
+      .catch((error) => {
+        mediumPostsLoadingError = error.message;
+        resetLoadings();
       });
   });
 </script>
 
-<section class="posts" style={`color: ${secondaryColor}`}>
-  <h1>Posts</h1>
+<section class="posts" id="posts">
+  <h1>Articles</h1>
   {#if mediumPosts}
     <div>
       {#each mediumPosts as post}
@@ -49,7 +51,7 @@
     </div>
   {/if}
   {#if mediumPostsLoading}
-    <p>Loading posts...</p>
+    <img src={loadingGifURL} width="400px" height="100%" alt="loading-bean" />
   {/if}
   {#if mediumPostsLoadingError}
     <p>{mediumPostsLoadingError}</p>
@@ -58,14 +60,15 @@
 
 <style lang="scss">
   .posts {
-    margin-top: 7vh;
+    margin-top: 80px;
     margin-left: 5%;
-    min-height: 50vh;
+    min-height: 600px;
   }
 
   h1 {
     font-family: "Poppins", sans-serif;
     font-size: 15vw;
+    color: currentColor;
   }
 
   div {
@@ -75,5 +78,30 @@
     column-gap: 3%;
     row-gap: 30px;
     padding-bottom: 100px;
+  }
+
+  i {
+    font-family: "Poppins", sans-serif;
+    font-size: 5vw;
+  }
+
+  /** Mobile */
+  @media (max-width: 768px) {
+    .posts {
+      margin-top: 50%;
+    }
+
+    h1 {
+      font-size: 80px;
+    }
+
+    div {
+      width: 90vw;
+      display: flex;
+      flex-flow: row wrap;
+      column-gap: 3%;
+      row-gap: 30px;
+      padding-bottom: 100px;
+    }
   }
 </style>

@@ -2,15 +2,13 @@
   import configuration from "$lib/config";
 
   let avatarImage = configuration.assets.image;
-  let secondaryColor = configuration.colors.secondary;
 </script>
 
 <img
   src={avatarImage}
-  style={`color: ${secondaryColor}`}
   alt="avatar"
-  width="180"
-  height="180"
+  width="200"
+  height="200"
   fetchpriority="high"
 />
 
@@ -18,6 +16,17 @@
   img {
     border: 2px solid currentColor;
     border-radius: 50%;
-    margin: 3% 0% 4% 5%;
+    margin: 3% 0% 1% 5%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /** Mobile */
+  @media (max-width: 768px) {
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 15% 0% 1% 5%;
+    }
   }
 </style>

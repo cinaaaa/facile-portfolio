@@ -7,9 +7,13 @@
 
 <section class="socials">
   {#each Object.entries(socials) as [socialName, socialLink]}
-    <a href={socialLink} target="__blank" alt={userName + "'s " + socialName}>
-      {socialName}
-    </a>
+    {#if socialName === "scroll"}
+      <a href={socialLink} alt="scrolling"> Scroll Down 👇 </a>
+    {:else}
+      <a href={socialLink} target="__blank" alt={userName + "'s " + socialName}>
+        {socialName}
+      </a>
+    {/if}
   {/each}
 </section>
 
@@ -25,14 +29,27 @@
   }
 
   .socials a {
+    color: currentColor;
     font-size: 3vw;
-    color: black;
     text-decoration: none;
     text-transform: capitalize;
     font-family: "Poppins", sans-serif;
+    padding-bottom: 6px;
   }
 
   .socials a:hover {
-    border-bottom: 6px solid black;
+    padding-bottom: 0;
+    border-bottom: 6px solid violet;
+  }
+
+  /** Mobile */
+  @media (max-width: 768px) {
+    .socials {
+      margin: 10% 0% 0% 5%;
+    }
+
+    .socials a {
+      font-size: 20px;
+    }
   }
 </style>

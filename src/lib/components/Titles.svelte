@@ -21,4 +21,14 @@
     margin-left: 5%;
     line-height: 90%;
   }
+
+  /** Mobile */
+  @media (max-width: 768px) {
+    section {
+      margin-top: 10%;
+    }
+    h1 {
+      font-size: 80px;
+    }
+  }
 </style>

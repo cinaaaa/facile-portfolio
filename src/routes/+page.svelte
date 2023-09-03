@@ -2,7 +2,9 @@
   import configuration from "$lib/config";
   import Background from "$lib/components/Background.svelte";
   import Avatar from "$lib/components/Avatar.svelte";
+  import Contact from "$lib/components/Contact.svelte";
   import Titles from "$lib/components/Titles.svelte";
+  import Skills from "$lib/components/Skills.svelte";
   import Socials from "$lib/components/Socials.svelte";
   import Posts from "$lib/components/Posts.svelte";
 
@@ -13,6 +15,7 @@
   <title>
     {personal.firstName}
     {personal.lastName}
+    | {personal.description}
   </title>
   <!-- description meta header -->
   <meta name="description" content={personal.description} />
@@ -25,6 +28,8 @@
   {#if socials.medium}
     <Posts />
   {/if}
+  <Skills />
+  <Contact />
 </Background>
 
 <style>

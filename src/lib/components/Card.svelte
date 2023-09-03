@@ -2,12 +2,10 @@
   import configuration from "$lib/config";
 
   export let post;
-
-  let secondaryColor = configuration.colors.secondary;
 </script>
 
 <a href={post.link} target="__blank">
-  <div style={`color: ${secondaryColor}`}>
+  <div>
     <h1>{@html post.title}</h1>
     <p>{post.pubDate.split(" ")[0]}</p>
   </div>
@@ -17,7 +15,8 @@
   a {
     text-decoration: none;
     width: 270px;
-    height: 170px;
+    height: 230px;
+    color: #222;
   }
 
   div {
@@ -28,15 +27,15 @@
     height: 100%;
     border-style: solid;
     border-width: 2px;
-    border-color: #090027;
-    box-shadow: 3px 3px 0 0 #090027;
-    -webkit-transition: all 200ms ease;
+    border-color: violet;
+    box-shadow: 3px 3px 0 0 violet;
     transition: all 200ms ease;
     background-color: white;
+    -webkit-transition: all 200ms ease;
   }
 
   div:hover {
-    box-shadow: 6px 6px 0 0 #090027;
+    box-shadow: 6px 6px 0 0 violet;
   }
 
   h1 {
@@ -50,8 +49,29 @@
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     margin: 0 15px;
-    color: #707070;
+    color: currentColor;
     position: absolute;
     bottom: 5px;
+  }
+
+  /** Mobile */
+  @media (max-width: 768px) {
+    a {
+      width: 90vw;
+      height: 230px;
+    }
+
+    div {
+      width: 90vw;
+      height: 100%;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
 </style>
