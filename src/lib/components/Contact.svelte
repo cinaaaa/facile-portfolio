@@ -19,7 +19,9 @@
 <section>
   <h5>
     Say a hello 👋
-    <span on:click={copyEmailToClipboard}>{email}</span>
+    <span on:click={copyEmailToClipboard} on:keypress={copyEmailToClipboard}>
+      {email}
+    </span>
   </h5>
 
   {#if displayToast}
