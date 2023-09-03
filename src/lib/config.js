@@ -105,7 +105,7 @@ const configuration = {
         },
     },
     assets: {
-        image: "/profile.jpg",
+        image: "/profile.webp",
         loadingGif: "/bean.gif",
     },
     socials: {
