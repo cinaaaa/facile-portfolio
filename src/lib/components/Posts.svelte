@@ -5,7 +5,6 @@
 
   const loadingGifURL = configuration.assets.loadingGif;
 
-  let secondaryColor = configuration.colors.secondary;
   let mediumUsername = configuration.socials.medium.split("@")[1];
 
   let mediumPosts;
@@ -78,11 +77,6 @@
     column-gap: 3%;
     row-gap: 30px;
     padding-bottom: 100px;
-  }
-
-  i {
-    font-family: "Poppins", sans-serif;
-    font-size: 5vw;
   }
 
   /** Mobile */
