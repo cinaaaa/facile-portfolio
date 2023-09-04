@@ -102,8 +102,8 @@
       color: violet; /* Change the color */
       font-weight: bold; /* If you want it to be bold */
       display: inline-block; /* Needed to add space between the bullet and the text */
-      width: 1em; /* Also needed for space (tweak if needed) */
-      margin-left: 0; /* Also needed for space (tweak if needed) */
+      width: 15px; /* Also needed for space (tweak if needed) */
+      margin-left: 5px; /* Also needed for space (tweak if needed) */
     }
   }
 </style>
