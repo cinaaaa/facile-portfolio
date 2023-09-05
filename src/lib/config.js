@@ -119,7 +119,7 @@ const configuration = {
         secondary: "#EFF6EE",
     },
     contact: {
-        email: "sina.farhadi.cyber@gmail.com"
+        email: "hey@bugpointer.com"
     },
 };
 

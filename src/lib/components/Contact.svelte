@@ -4,12 +4,37 @@
 
   let { email } = configuration.contact;
   let displayToast = false;
+
   const FADE_OUT_DURATION = 3000;
 
+  function fallbackCopyTextToClipboard(text) {
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand("copy");
+      displayToast = true;
+    } catch (err) {
+      console.error("Fallback: Oops, unable to copy", err);
+    }
+    document.body.removeChild(textArea);
+  }
+
   function copyEmailToClipboard() {
+    // check the navigator support
+    if (!navigator.clipboard) {
+      fallbackCopyTextToClipboard(email);
+      return;
+    }
+
     navigator.clipboard.writeText(email);
     displayToast = true;
-
     setTimeout(() => {
       displayToast = false;
     }, FADE_OUT_DURATION);
@@ -18,7 +43,7 @@
 
 <section>
   <h5>
-    Say a hello 👋
+    Let's talk 👋
     <span on:click={copyEmailToClipboard} on:keypress={copyEmailToClipboard}>
       {email}
     </span>
@@ -39,7 +64,7 @@
   h5 {
     color: currentColor;
     font-family: "Poppins", sans-serif;
-    font-size: 2vw;
+    font-size: 40px;
     margin: 0 5%;
     padding-bottom: 50px;
   }
