@@ -12,13 +12,9 @@
 </script>
 
 <svelte:head>
-  <title>
-    {personal.firstName}
-    {personal.lastName}
-    | {personal.description}
-  </title>
+  <title>{personal.description}</title>
   <!-- description meta header -->
-  <meta name="description" content={personal.description} />
+  <meta name="description" content={personal.bio} />
 </svelte:head>
 
 <Background>
