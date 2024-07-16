@@ -1,8 +1,8 @@
 const configuration = {
     personal: {
-        firstName: "Sina",
-        lastName: "Farhadi",
-        description: "Senior Frontend Developer | Expert in React.js, Next.js, and Svelte | Specializing in Full-Stack Web Applications and Blockchain Technologies",
+        firstName: "Prototyper.ir",
+        lastName: "",
+        description: "کانال یوتیوب پروتوتایپر سینا فرهادی",
         skills: {
             Frontend: [
                 "React.js",
@@ -105,14 +105,12 @@ const configuration = {
         },
     },
     assets: {
-        image: "/profile.jpeg",
+        image: "/logo.png",
         loadingGif: "/bean.gif",
     },
     socials: {
-        linkedin: "https://linkedin.com/in/sina-farhadi",
-        github: "https://github.com/cinaaaa",
-        medium: "https://medium.com/@sinafarhadi",
-        scroll: "#posts",
+        youtube: "https://linkedin.com/in/sina-farhadi",
+        instagram: "https://github.com/cinaaaa"
     },
     colors: {
         primary: "#0E1116",

@@ -7,7 +7,6 @@
 
 <section style={`color: ${secondaryColor}`}>
   <h1>{firstName}</h1>
-  <h1>{lastName}</h1>
 </section>
 
 <style>
@@ -16,7 +15,7 @@
   h1 {
     color: currentColor;
     font-family: "Poppins", sans-serif;
-    font-size: 15vw;
+    font-size: 13vw;
     margin: 0px;
     margin-left: 5%;
     line-height: 90%;

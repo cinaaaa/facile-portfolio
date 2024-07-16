@@ -7,13 +7,9 @@
 
 <section class="socials">
   {#each Object.entries(socials) as [socialName, socialLink]}
-    {#if socialName === "scroll"}
-      <a href={socialLink} alt="scrolling"> Scroll Down 👇 </a>
-    {:else}
-      <a href={socialLink} target="__blank" alt={userName + "'s " + socialName}>
-        {socialName}
-      </a>
-    {/if}
+    <a href={socialLink} target="__blank" alt={userName + "'s " + socialName}>
+      {socialName}
+    </a>
   {/each}
 </section>
 
